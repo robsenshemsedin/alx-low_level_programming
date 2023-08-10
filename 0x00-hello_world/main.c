@@ -1,7 +1,10 @@
 #include <stdio.h>
-
-int main(void) /*A function that prints "hello world" and end with new line.*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-printf("Hello world!\n");
-return (0);
+    return (0);
 }
