@@ -1,9 +1,11 @@
 #include <stdio.h>
 /**
- * A main function that prints \"Programming is like building a multilingual puzzl  and ends with new line
-*/
+ * main - print a message
+ *
+ * Return: 0 after finishing the task
+ */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle\n");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
