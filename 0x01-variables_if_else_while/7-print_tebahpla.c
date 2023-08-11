@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Print all lower case letters in descending order
+ * main - Print all lower case letters in descending order.
  *
- * Retrun: Always return success
+ * Return: Always return success or 0.
  */
 int main(void)
 {
