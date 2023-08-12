@@ -9,16 +9,16 @@
 int main(void)
 {
 	int i = 0;
-	int j = 0;
-	int k = 0;
+	int j = 1;
+	int k = 2;
 
 	while (i <= 7)
 	{
 		while (j <= 8)
-		 {
+		{
 			while (k <= 9)
 			{
-				if (k != i || k != j)
+				if (k != i && k != j && i != j)
 				{
 					putchar('0' + i);
 					putchar('0' + j);
