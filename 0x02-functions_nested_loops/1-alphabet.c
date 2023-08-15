@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * main - printing lower case letters using function from main.h.
- *
- * Return: Always return success.
+ * print_alphabet - Print lower case alphabet.
+ * Return: void.
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
