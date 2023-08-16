@@ -16,7 +16,10 @@ int main(void)
 		long int sum = 0;
 
 		sum = num1 + num2;
-		printf("%ld, ", sum);
+		if (i == 50)
+			printf("%ld", sum);
+		else
+			printf("%ld, ", sum);
 		num1 = num2;
 		num2 = sum;
 		i++;
