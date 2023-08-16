@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table
+ * print_times_table - print the multiplication table.
  * @n: inputNumber.
  *
  * Return: Always return success.
@@ -47,11 +47,15 @@ void print_times_table(int n)
 					_putchar('0' + (((result - 100) - ((result - 100) % 10)) / 10));
 					_putchar('0' + (result % 10));
 				}
-				else
+				else if (result == 100)
 				{
 					_putchar(' ');
 					_putchar('1');
 					_putchar('0');
+					_putchar('0');
+				}
+				else if (j == 0)
+				{
 					_putchar('0');
 				}
 				if (j != n)
