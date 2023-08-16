@@ -1,0 +1,10 @@
+/**
+ * display -  Print the result on the screen.
+ * @result: Multiplication of numbers.
+ *
+ * Return: Void.
+ */
+void display(int result)
+{
+        _putchar(result);
+}
