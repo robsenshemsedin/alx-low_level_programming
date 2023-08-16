@@ -12,12 +12,12 @@ int main(void)
 	unsigned long num2 = 1;
 	unsigned long i = 1;
 
-	while (i <= LIMIT)
+	while (i < LIMIT)
 	{
 		unsigned long sum = 0;
 
 		sum = num1 + num2;
-		if (i == LIMIT)
+		if (i == (LIMIT - 1))
 			printf("%lu", sum);
 		else
 			printf("%lu, ", sum);
