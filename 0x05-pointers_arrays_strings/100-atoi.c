@@ -8,7 +8,8 @@
  */
 int _atoi(char *s)
 {
-	int new = 0, i = 0, digit = 0, n = 0, tempdigit = 0, j = 1, sign = 2;
+	unsigned int new = 0, i = 0, digit = 0, n = 0, tempdigit = 0, j = 1, sign = 2;
+	int end = 0;
 
 	while (*s != '\0')
 	{
@@ -19,7 +20,7 @@ int _atoi(char *s)
 	}
 	while (j <= n)
 	{
-		if (*(s - j) >= '0' && *(s - j) <= '9')
+		if ((*(s - j) >= '0' && *(s - j) <= '9') && (end == 0))
 		{
 			new = *(s - j) - '0';
 			tempdigit = digit;
@@ -30,6 +31,13 @@ int _atoi(char *s)
 			}
 			i += new;
 			digit++;
+		}
+		else
+		{
+			if (digit)
+			{
+				end = 1;
+			}
 		}
 		j++;
 	}
