@@ -25,19 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 				*dest = *src;
 				++dest;
 				++src;
-				++i;
-			}
-			if (i > n)
-			{
-				while (1)
-				{
-					if (*src == '\0')
-					{
-						*src = 'a';
-						break;
-					}
-					++src;
-				}
+				++i
 			}
 			*dest = '\0';
 			break;
