@@ -1,4 +1,3 @@
-julien@ubuntu:~/0x07$ cat 0-main.c
 #include "main.h"
 #include <stdio.h>
 
@@ -45,3 +44,4 @@ int main(void)
     simple_print_buffer(buffer, 98);    
     return (0);
 }
+
